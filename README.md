@@ -22,7 +22,7 @@ Bonus
 - [ ] Using the features of the chosen language in place of relying on third party dependencies
 - [ ] Interactive UI features such as pagination or sorting
 
-**Resources**
+**Data Resources**
 
 - [data.gov](https://catalog.data.gov/dataset)
 - [defense.gov](https://www.defense.gov/data.json)
