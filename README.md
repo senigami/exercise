@@ -1,5 +1,6 @@
 
 **Preamble**
+
 This instruction set is intentionally vague. There are many ways to perform this exercise. Limit your time to four hours.
 
 Preferred languages
@@ -8,6 +9,7 @@ Preferred languages
 - Python
 
 **The Task**
+
 Fork this repo to write a program which
 - [ ] Creates a web server
 - [ ] Consumes a API from two open data sources
@@ -21,5 +23,6 @@ Bonus
 - [ ] Interactive UI features such as pagination or sorting
 
 **Resources**
+
 - [data.gov](https://catalog.data.gov/dataset)
 - [defense.gov](https://www.defense.gov/data.json)
