@@ -1,7 +1,7 @@
 
 **Preamble**
 
-This instruction set is intentionally vague. There are many ways to perform this exercise. Limit your time to four hours. When you are complete or the time limit is reached commit you code. The final commit message should contain the following sting "FINAL-COMMIT". Submit a link to the repo when you are complete.
+This instruction set is intentionally vague. There are many ways to perform this exercise. Limit your time to four hours. Commit your code when you are complete or you have reached the time limit. The final commit message should contain the following string "FINAL-COMMIT". Submit a link to the repo when you are complete.
 
 Preferred languages
 - Node/JavaScript
