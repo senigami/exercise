@@ -8,7 +8,7 @@ Preferred languages
 - Go
 - Python
 
-**The Task**
+**The Exercise**
 
 Write a program which
 - [ ] Creates a web server
