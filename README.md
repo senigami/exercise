@@ -7,6 +7,7 @@ There are many ways to perform _The Exercise_. Limit your time to four hours. Co
 
 Preferred languages
 - Node/JavaScript
+- Go
 - Python
 
 **The Exercise**
