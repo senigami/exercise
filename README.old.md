@@ -1,19 +1,5 @@
 
-**Preamble**
-
-The following instruction set is vague by design.
-
-There are many ways to perform _The Exercise_. Limit your time to four hours. Commit your code often. When you're complete, or when you've reached the time limit, push your final commit. The final commit message must contain the following string "FINAL-COMMIT," to mark the end of _The Exercise_. Submit a link to the repo when you're complete.
-
-Preferred languages
-- Node/JavaScript
-- Go
-- Python
-
-**The Exercise**
-
 Write a program which
-- [ ] Creates a http web server
 - [ ] Consumes a API from two _Open Data Sources_
 - [ ] Renders the respective payloads in a view
 
