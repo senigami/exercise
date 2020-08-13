@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { fetchDrinkingData } from './drinkingActions';
+import { fetchDrinkingData, sortDrinkingData } from './drinkingActions';
 import { connect } from 'react-redux';
 import { Table } from 'semantic-ui-react';
 
@@ -9,6 +9,7 @@ const mapStateToProps = (state) => ({
 
 const actions = {
   fetchDrinkingData,
+  sortDrinkingData,
 };
 
 export class DrinkingReport extends Component {
@@ -30,23 +31,39 @@ export class DrinkingReport extends Component {
   }
 
   render() {
-    const { data } = this.props;
-    console.log(data);
+    const { data, column, direction, sortDrinkingData } = this.props;
     const ListItem = (item) => (
-      <Table.Row key={item[0]}>
-        <Table.Cell>{item[8]}</Table.Cell>
-        <Table.Cell>{item[9]}</Table.Cell>
-        <Table.Cell>{item[10]}</Table.Cell>
+      <Table.Row key={item.key}>
+        <Table.Cell>{item.state}</Table.Cell>
+        <Table.Cell>{item['2012']}</Table.Cell>
+        <Table.Cell>{item['2014']}</Table.Cell>
       </Table.Row>
     );
     const ListData = ({ items }) => {
+      console.log('direction', direction);
       return (
-        <Table compact singleLine>
+        <Table sortable celled fixed>
           <Table.Header>
             <Table.Row>
-              <Table.HeaderCell>State</Table.HeaderCell>
-              <Table.HeaderCell>2012</Table.HeaderCell>
-              <Table.HeaderCell>2014</Table.HeaderCell>
+              <Table.HeaderCell
+                className={`sorted ${direction}`}
+                sorted={column === 'state' ? direction : true}
+                onClick={() => sortDrinkingData('state')}
+              >
+                State
+              </Table.HeaderCell>
+              <Table.HeaderCell
+                sorted={column === '2012' ? direction : null}
+                onClick={() => sortDrinkingData('2012')}
+              >
+                2012
+              </Table.HeaderCell>
+              <Table.HeaderCell
+                sorted={column === '2014' ? direction : null}
+                onClick={() => sortDrinkingData('2014')}
+              >
+                2014
+              </Table.HeaderCell>
             </Table.Row>
           </Table.Header>
           <Table.Body>{items.map((item) => ListItem(item))}</Table.Body>
