@@ -46,7 +46,6 @@ export class DrinkingReport extends Component {
           <Table.Header>
             <Table.Row>
               <Table.HeaderCell
-                className={`sorted ${direction}`}
                 sorted={column === 'state' ? direction : true}
                 onClick={() => sortDrinkingData('state')}
               >
@@ -75,7 +74,7 @@ export class DrinkingReport extends Component {
       <div>
         <h1>
           Percentage of Adults Who Report Driving After Drinking Too Much,
-          Region 3
+          Region 3 (sortable columns)
         </h1>
         {data ? <ListData items={data} /> : <h1>loading...</h1>}
       </div>
