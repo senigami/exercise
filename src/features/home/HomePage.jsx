@@ -10,7 +10,7 @@ const HomePage = ({ history }) => {
           I realize the names on this are pretty generic but at this point I
           haven't even decided which reports to use
         </p>
-        <Button onClick={() => history.push('/report1')} size='huge'>
+        <Button onClick={() => history.push('/defenseReport')} size='huge'>
           View Report 1
           <Icon name='right arrow' />
         </Button>

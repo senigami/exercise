@@ -1,0 +1,1 @@
+export const FETCH_DEFENSE_DATA = 'FETCH_DEFENSE_DATA';

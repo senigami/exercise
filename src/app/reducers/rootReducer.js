@@ -1,10 +1,9 @@
 import { combineReducers } from 'redux';
-//import testReducer from '../../features/testarea/testReducer';
-//import eventReducer from '../../features/events/eventReducer';
+import defenseReducer from '../../features/defenseReport/reportReducer';
 
 const rootReducer = combineReducers({
-  //test: testReducer,
-  //events: eventReducer,
+  defenseReport: defenseReducer,
+  report2: null,
 });
 
 export default rootReducer;

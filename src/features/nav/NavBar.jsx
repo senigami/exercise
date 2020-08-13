@@ -15,7 +15,12 @@ class NavBar extends Component {
               style={{ width: 'auto', height: '2em' }}
             />
           </Menu.Item>
-          <Menu.Item as={NavLink} exact to='/Report1' name='Report1' />
+          <Menu.Item
+            as={NavLink}
+            exact
+            to='/defenseReport'
+            name='Defense Report'
+          />
           <Menu.Item as={NavLink} to='/Report2' name='Report2' />
         </Container>
       </Menu>
