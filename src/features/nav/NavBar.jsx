@@ -21,7 +21,7 @@ class NavBar extends Component {
             to='/defenseReport'
             name='Defense Report'
           />
-          <Menu.Item as={NavLink} to='/Report2' name='Report2' />
+          <Menu.Item as={NavLink} to='/drinkingReport' name='Drinking Report' />
         </Container>
       </Menu>
     );

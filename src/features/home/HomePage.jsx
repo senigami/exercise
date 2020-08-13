@@ -14,7 +14,7 @@ const HomePage = ({ history }) => {
           View Report 1
           <Icon name='right arrow' />
         </Button>
-        <Button onClick={() => history.push('/report2')} size='huge'>
+        <Button onClick={() => history.push('/drinkingReport')} size='huge'>
           View Report 2
           <Icon name='right arrow' />
         </Button>
